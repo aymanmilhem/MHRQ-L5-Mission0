@@ -1,0 +1,14 @@
+.card {
+    /* border: 1px dashed black; */
+    flex: 1 0 25%;
+    flex-wrap: wrap;
+    margin: 10px;
+    height:400px;
+    padding: 10px 5px;
+    /* width: 400px; */
+}
+
+.card img {
+    height: 70%;
+    /* width: 30%; */
+}

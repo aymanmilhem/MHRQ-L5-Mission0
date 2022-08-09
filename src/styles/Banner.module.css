@@ -1,0 +1,35 @@
+.banner {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 10px;
+    /* flex-direction: column; */
+}
+.bannerContentDiv {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 20px;
+    margin-top: 30px;
+}
+.bannerText {
+    display: inline-block;
+    color: white;
+    font-size: 3rem;    
+    border-right: 5px;
+    left: 0;
+
+}
+.bannerImage {
+    box-sizing: border-box;
+    display: inline;
+    width: 30%;
+    border: 10px solid gray;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navBar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1;
+    border-bottom: 2px solid lightgray;
+    justify-content: space-between;
+}
+
+.navBarRight {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2px;
+}
+
+.navBarMenuButton {
+    width: 100px;
+    margin-right: 2px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.navBarLoginButton {
+    margin-left: 20px;
+    margin-right: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.navBarLeft {
+    display: flex;
+    margin: 2px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    /* min-width: 30%; */
+}
+
+.navBarLeftButton {
+    background-color: gray;
+    border: none;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 50px;
+}
+
+.navBarMenu__burger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-right: 10px;
+    display: none;
+}
+
+.navBarMenuButton__burger {
+    width: 30px;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+    transition: all .5s ease-in-out;
+}
+
+.navBarMenuButton__burger::before,
+.navBarMenuButton__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+    transition: all .5s ease-in-out;
+}
+
+.navBarMenuButton__burger::before {
+    transform: translate(-15px, -10px);
+    
+}
+
+.navBarMenuButton__burger::after {
+    transform: translate(-15px, 10px);
+}
+
+@media only screen and (max-width: 760px) {
+    .navBarLeftButton {
+        height: 30px;
+        width: 30px;
+        flex: 1 1 30px;
+    }
+
+    .navBarRight {
+        display: none;
+    }
+
+    .navBarMenu__burger {
+        display: block;
+        margin-top: 30px;
+    }
+}
